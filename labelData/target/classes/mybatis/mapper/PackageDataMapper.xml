@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.main.PackageDataMapper" >
+  <resultMaps>
+    <resultMap id="BaseResultMap" type="com.main.modelAndDomain.PackageData" >
+        <id column="UserID" property="UserID" jdbcType="VARCHAR" />
+        <result column="OrderID" property="OrderID" jdbcType="VARCHAR" />
+        <result column="ItemValueCurrencyType" property="ItemValueCurrencyType" jdbcType="VARCHAR" />
+        <result column="SenderName" property="SenderName" jdbcType="VARCHAR"/>
+        <result column="SenderFirstName" property="SenderFirstName" jdbcType="VARCHAR" />
+        <result column="SenderBusiessName" property="SenderBusiessName" jdbcType="VARCHAR" />
+        <result column="SenderAddress_Line_1" property="SenderAddress_Line_1" jdbcType="VARCHAR" />
+        <result column="SenderCity" property="SenderCity" jdbcType="VARCHAR" />
+        <result column="SenderProvice" property="SenderProvice" jdbcType="VARCHAR" />
+        <result column="SenderPostal_Code" property="SenderPostal_Code" jdbcType="VARCHAR" />
+        <result column="SenderCountry_Code" property="SenderCountry_Code" jdbcType="VARCHAR" />
+        <result column="SenderPhone" property="SenderPhone" jdbcType="VARCHAR" />
+        <result column="SenderEmail" property="SenderEmail" jdbcType="VARCHAR" />
+        <result column="SenderSignature" property="SenderSignature" jdbcType="VARCHAR" />
+        <result column="RecipientFirstName" property="RecipientFirstName" jdbcType="VARCHAR" />
+        <result column="RecipientLastName" property="RecipientLastName" jdbcType="VARCHAR" />
+        <result column="RecipientAddress_Line_1" property="RecipientAddress_Line_1" jdbcType="VARCHAR" />
+        <result column="RecipientCity" property="RecipientCity" jdbcType="VARCHAR" />
+        <result column="RecipientProvince" property="RecipientProvince" jdbcType="VARCHAR" />
+        <result column="RecipientPostal_Code" property="RecipientPostal_Code" jdbcType="VARCHAR" />
+        <result column="RecipientCountry_Code" property="RecipientCountry_Code" jdbcType="VARCHAR" />
+        <result column="RecipientPhone" property="RecipientPhone" jdbcType="VARCHAR" />
+        <result column="RecipientEmail" property="RecipientEmail" jdbcType="VARCHAR" />
+        <result column="SenderMiddleInitial" property="SenderMiddleInitial" jdbcType="VARCHAR" />
+        <result column="SenderLastName" property="SenderLastName" jdbcType="VARCHAR" />
+        <result column="SenderBusinessName" property="SenderBusinessName" jdbcType="VARCHAR" />
+        <result column="SenderAddress_Line_2" property="SenderAddress_Line_2" jdbcType="VARCHAR" />
+        <result column="SenderAddress_Line_3" property="SenderAddress_Line_3" jdbcType="VARCHAR" />
+        <result column="SenderAddress_IsPOBox" property="SenderAddress_IsPOBox" jdbcType="VARCHAR" />
+        <result column="SenderProvince" property="SenderProvince" jdbcType="VARCHAR" />
+        <result column="RecipientMiddleInitial" property="RecipientMiddleInitial" jdbcType="VARCHAR" />
+        <result column="RecipientBusinessName" property="RecipientBusinessName" jdbcType="VARCHAR" />
+        <result column="RecipientAddress_Line_2" property="RecipientAddress_Line_2" jdbcType="VARCHAR" />
+        <result column="RecipientAddress_Line_3" property="RecipientAddress_Line_3" jdbcType="VARCHAR" />
+        <result column="RecipientInLineTransLationAddressLine1" property="RecipientInLineTransLationAddressLine1" jdbcType="VARCHAR" />
+        <result column="RecipientInLineTransLationAddressLine2" property="RecipientInLineTransLationAddressLine2" jdbcType="VARCHAR" />
+        <result column="RecipientAddress_IsPOBox" property="RecipientAddress_IsPOBox" jdbcType="VARCHAR" />
+        <result column="PackageType" property="PackageType" jdbcType="VARCHAR" />
+        <result column="PackageShape" property="PackageShape" jdbcType="VARCHAR" />
+        <result column="PackageID" property="PackageID" jdbcType="VARCHAR" />
+        <result column="PackageWeight" property="PackageWeight" jdbcType="VARCHAR" />
+        <result column="WeightUnit" property="WeightUnit" jdbcType="VARCHAR" />
+        <result column="UnitOfMeasurement" property="UnitOfMeasurement" jdbcType="VARCHAR" />
+        <result column="ServiceType" property="ServiceType" jdbcType="VARCHAR" />
+        <result column="RateType" property="RateType" jdbcType="VARCHAR" />
+        <result column="PackagePhysicalCount" property="PackagePhysicalCount" jdbcType="VARCHAR" />
+        <result column="MailingAgentID" property="MailingAgentID" jdbcType="VARCHAR" />
+        <result column="ValueLoaded" property="ValueLoaded" jdbcType="VARCHAR" />
+        <result column="PFCorEEL" property="PFCorEEL" jdbcType="VARCHAR" />
+        <result column="ShippingandHandling" property="ShippingandHandling" jdbcType="VARCHAR" />
+        <result column="ShippingCurrencyType" property="ShippingCurrencyType" jdbcType="VARCHAR" />
+        <result column="PackageLength" property="PackageLength" jdbcType="VARCHAR" />
+        <result column="PackageWidth" property="PackageWidth" jdbcType="VARCHAR" />
+        <result column="PackageHeight" property="PackageHeight" jdbcType="VARCHAR" />
+        <result column="PostagePaid" property="PostagePaid" jdbcType="VARCHAR" />
+        <result column="PostagePaidCurrencyType" property="PostagePaidCurrencyType" jdbcType="VARCHAR" />
+        <result column="RestrictionType" property="RestrictionType" jdbcType="VARCHAR" />
+        <result column="RestrictionComments" property="RestrictionComments" jdbcType="VARCHAR" />
+        <result column="ReturnAgentID" property="ReturnAgentID" jdbcType="VARCHAR" />
+        <result column="LicenseNumber" property="LicenseNumber" jdbcType="VARCHAR" />
+        <result column="CertificateNumber" property="CertificateNumber" jdbcType="VARCHAR" />
+        <result column="InvoiceNumber" property="InvoiceNumber" jdbcType="VARCHAR" />
+        <result column="PaymentAndDeliveryTerms" property="PaymentAndDeliveryTerms" jdbcType="VARCHAR" />
+        <result column="ReturnServiceRequested" property="ReturnServiceRequested" jdbcType="VARCHAR" />
+        <result column="EntryFacilityZip" property="EntryFacilityZip" jdbcType="VARCHAR" />
+        <result column="CustomerReferenceID" property="CustomerReferenceID" jdbcType="VARCHAR" />
+        <result column="RedirectBusinessName" property="RedirectBusinessName" jdbcType="VARCHAR" />
+        <result column="RedirectFirstName" property="RedirectFirstName" jdbcType="VARCHAR" />
+        <result column="RedirectLastName" property="RedirectLastName" jdbcType="VARCHAR" />
+        <result column="RedirectAddress_Line_1" property="RedirectAddress_Line_1" jdbcType="VARCHAR" />
+        <result column="RedirectAddress_Line_2" property="RedirectAddress_Line_2" jdbcType="VARCHAR" />
+        <result column="RedirectCity" property="RedirectCity" jdbcType="VARCHAR" />
+        <result column="RedirectProvince" property="RedirectProvince" jdbcType="VARCHAR" />
+        <result column="RedirectPostal_Code" property="RedirectPostal_Code" jdbcType="VARCHAR" />
+        <result column="RedirectCountry_Code" property="RedirectCountry_Code" jdbcType="VARCHAR" />
+        <result column="RedirectPhone" property="RedirectPhone" jdbcType="VARCHAR" />
+        <result column="RedirectEmail" property="RedirectEmail" jdbcType="VARCHAR" />
+        <result column="ExporterReferenceType" property="ExporterReferenceType" jdbcType="VARCHAR" />
+        <result column="ExporterReferenceValue" property="ExporterReferenceValue" jdbcType="VARCHAR" />
+        <result column="ExporterPhoneNo" property="ExporterPhoneNo" jdbcType="VARCHAR" />
+        <result column="ExporterEmail" property="ExporterEmail" jdbcType="VARCHAR" />
+        <result column="ImporterReferenceType" property="ImporterReferenceType" jdbcType="VARCHAR" />
+        <result column="ImporterReferenceValue" property="ImporterReferenceValue" jdbcType="VARCHAR" />
+        <result column="ImporterPhoneNo" property="ImporterPhoneNo" jdbcType="VARCHAR" />
+        <result column="ImporterEmail" property="ImporterEmail" jdbcType="VARCHAR" />
+        <result column="DestinationLocation" property="DestinationLocation" jdbcType="VARCHAR" />
+        <result column="PriceCategoryType" property="PriceCategoryType" jdbcType="VARCHAR" />
+        <result column="DestinationLocationID" property="DestinationLocationID" jdbcType="VARCHAR" />
+        <result column="RecipientFirstName_Foreign" property="RecipientFirstName_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientLastName_Foreign" property="RecipientLastName_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientBusinessName_Foreign" property="RecipientBusinessName_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientAddress_Line_1_Foreign" property="RecipientAddress_Line_1_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientAddress_Line_2_Foreign" property="RecipientAddress_Line_2_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientAddress_Line_3_Foreign" property="RecipientAddress_Line_3_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientCity_Foreign" property="RecipientCity_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientProvince_Foreign" property="RecipientProvince_Foreign" jdbcType="VARCHAR" />
+        <result column="RecipientPostal_Code_Foreign" property="nickName" jdbcType="VARCHAR" />
+        <result column="PackageOrderDate" property="PackageOrderDate" jdbcType="VARCHAR" />
+        <result column="InsuredAmount" property="InsuredAmount" jdbcType="VARCHAR" />
+        
+     </resultMap>
+      <resultMap id="BaseResultMap" type="com.main.modelAndDomain.ItemData" >
+        <id column="PackageID" property="PackageID" jdbcType="VARCHAR" />
+        <result column="ItemID" property="ItemID" jdbcType="VARCHAR" />
+        <result column="CommodityName" property="CommodityName" jdbcType="VARCHAR" />
+        <result column="ItemDescription" property="ItemDescription" jdbcType="VARCHAR"/>
+        <result column="CustomsDescription" property="CustomsDescription" jdbcType="VARCHAR" />
+        <result column="UnitValue" property="UnitValue" jdbcType="VARCHAR" />
+        <result column="ItemWeight" property="ItemWeight" jdbcType="VARCHAR" />
+        <result column="UnitOfItemWeight" property="UnitOfItemWeight" jdbcType="VARCHAR" />
+        <result column="Quantity" property="Quantity" jdbcType="VARCHAR" />
+        <result column="CountryOfOrigin" property="CountryOfOrigin" jdbcType="VARCHAR" />
+        <result column="HTSNumber" property="HTSNumber" jdbcType="VARCHAR" />
+        <result column="MultiSourceFlag" property="MultiSourceFlag" jdbcType="VARCHAR" />
+        <result column="OriginalImportCost" property="OriginalImportCost" jdbcType="VARCHAR" />
+        <result column="ImportCostCurrencyType" property="ImportCostCurrencyType" jdbcType="VARCHAR" />
+    </resultMap>
+    </resultMaps>
+   
+    <sql id="Base_Column_List" >
+        id, userName, passWord, user_sex, nick_name
+    </sql>
+ 
+  
+ 
+    <insert id="insert" parameterType="com.main.modelAndDomain.PackageData" >
+       INSERT INTO 
+       		test.packageData
+       		(userName,passWord,user_sex) 
+       	VALUES
+       		(#{userName}, #{passWord}, #{userSex})
+    </insert>
+    <update id="update" parameterType="com.main.modelAndDomain.PackageData" >
+       UPDATE 
+       		test.packageData
+       SET 
+       	<if test="userName != null">userName = #{userName},</if>
+       	<if test="passWord != null">passWord = #{passWord},</if>
+       	nick_name = #{nickName}
+       WHERE 
+       		id = #{id}
+       		
+    </update>
+    <delete id="delete" parameterType="java.lang.Long" >
+       DELETE FROM
+       		 test.packageData 
+       WHERE 
+       		 id =#{id}
+    </delete>
+      <select id="getAll" resultMap="BaseResultMap"  >
+       SELECT 
+       <include refid="Base_Column_List" />
+	   FROM test.packageData
+    </select>
+ 
+    <select id="getOne" parameterType="java.lang.Long" resultMap="BaseResultMap" >
+        SELECT 
+       <include refid="Base_Column_List" />
+	   FROM test.packageData
+	   WHERE id = #{id}
+    </select>
+    
+    
+    
+    
+    
+ 
+</mapper>
